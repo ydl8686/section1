@@ -1,0 +1,6 @@
+<ehcache>
+    <cache name="mine"
+           maxBytesLocalHeap="40m"
+           timeToLiveSeconds="100">
+    </cache>
+</ehcache>
