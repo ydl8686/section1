@@ -45,3 +45,6 @@ public class LoginLog implements Serializable {
     }
 
 }
+
+
+//领域对象，pojo对象，和数据库相对应

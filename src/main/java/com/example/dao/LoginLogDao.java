@@ -8,6 +8,7 @@ import com.example.domain.LoginLog;
 
 @Repository
 public class LoginLogDao {
+//    主要的逻辑就是读取数据库
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

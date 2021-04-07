@@ -20,6 +20,7 @@ public class LoginControllerTest {
         when(userService.hasMatchUser("test", "123456")).thenReturn(false);
 
         LoginController controller = new LoginController(userService);
+//        模拟web容器，模拟请求
         MockMvc mockMvc = standaloneSetup(controller).build();
         mockMvc.perform(post("/admin/loginCheck.html")
                 .param("userName", "test")

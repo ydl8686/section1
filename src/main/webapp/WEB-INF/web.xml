@@ -27,3 +27,5 @@
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 </web-app>
+
+<!--给web容器看的-->
