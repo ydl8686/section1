@@ -1,16 +1,28 @@
 package com.example.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+@Entity
+@Table(name = "t_login_log")
 public class LoginLog implements Serializable {
+
+    @Id
+    @Column(name = "login_log_id")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int loginLogId;
 
+    @Column(name = "user_id")
     private int userId;
 
+    @Column(name = "ip")
     private String ip;
 
+    @Column(name = "login_datetime")
     private Date loginDate;
+
+    public LoginLog(){}
 
     public String getIp() {
         return ip;
@@ -45,6 +57,3 @@ public class LoginLog implements Serializable {
     }
 
 }
-
-
-//领域对象，pojo对象，和数据库相对应

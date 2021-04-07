@@ -30,7 +30,7 @@ public class UserService {
         loginLog.setUserId(user.getUserId());
         loginLog.setIp(user.getLastIp());
         loginLog.setLoginDate(user.getLastVisit());
-        loginLogDao.insertLoginLog(loginLog);
+        loginLogDao.save(loginLog);
         return true;
     }
 }
