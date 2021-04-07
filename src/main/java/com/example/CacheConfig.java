@@ -12,6 +12,7 @@ import org.springframework.core.io.ClassPathResource;
 @EnableCaching //启用缓存
 public class CacheConfig {
     @Bean
+//    这里可以返回不同的缓存机制（Spring支持的）
     public EhCacheCacheManager cacheManager(CacheManager ehCacheCacheManager) {
         return new EhCacheCacheManager(ehCacheCacheManager);
     }
